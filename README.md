@@ -24,7 +24,9 @@ I'm grateful to these researchers for writing and releasing their codes.
 
 ## Installation
 ```
-sudo python setup.py install
+conda install -c conda-forge cupy cutensor cudatoolkit=10.1 <<---Change this line according to your CUDA version
+
+python setup.py install
 ```
 
 ## Running examples
@@ -67,11 +69,6 @@ From left to right: reference image, initial state, and optimization process.
 ## FAQ
 ### CPU implementation?
 Currently, this code has no CPU implementation. Since CPU implementation would be probably too slow for practical usage, we do not plan to support CPU.
-
-### Python3 support?
-Code in this repository is only for Python 2.x. [PyTorch port by Nikos Kolotourosr](https://github.com/daniilidis-group/neural_renderer), supports Python 3.x.
-
-If you want to install neural renderer using Python 3, please add ./neural_renderer to $PYTHON_PATH temporarily as mentioned in [issue #6](https://github.com/hiroharu-kato/neural_renderer/issues/6). However, since we did not tested our code using Python 3, it might not work well.
 
 ## Citation
 
