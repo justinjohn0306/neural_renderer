@@ -16,6 +16,8 @@ This repository only contains the core component and simple examples. Related re
 
 ## Installation
 ```
+pip install chainer==5.0.0
+
 conda install -c conda-forge cupy cutensor cudatoolkit=10.1 <<---Change this line according to your CUDA version
 
 python setup.py install
